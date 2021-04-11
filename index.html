@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Expense Tracker</h2>
+    <div class="budget-container">
+        <div id = "balance">
+            <h4>BALANCE</h4>
+        </div>
+        <div class="budget-header">
+            <div class="income">
+                <h5>INCOME</h5>
+                <div id="inr_tot"></div>
+            </div>
+            <div class="expense">
+                <h5>EXPENSES</h5>
+                <div id="inr_min"></div>
+            </div>
+        </div>
+        
+        <div class="history">
+            <h3>History</h3>
+            <ul id ="list">
+                <!-- <li class="minus">
+                    <span></span>
+                </li> -->
+            </ul>
+        </div>
+        
+        <div class="input">
+            
+            <h3>Add New Transaction</h3>
+
+            <label for="Text">Grocery Name</label>
+            <input type="text" placeholder="grocery name" id = "groc_text">
+            <br>
+            <label for="Amount">Amount</label>
+            <input type="number" placeholder="spend Rs" id ="amount">
+
+           <button id ="btn">Submit</button>
+
+        </div>
+    </div>
+
+   
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

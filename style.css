@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Ubuntu:ital,wght@1,300&display=swap');*{
+    box-sizing: border-box;
+}
+body{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    background:#f1c504;
+    background-color: #0f233c;
+/* background: -webkit-linear-gradient(to right, #fef17b, #ff7e5f);  
+background: linear-gradient(to right, #feb47b, #ffda5f);  */
+
+    
+}
+.budget-container{
+   margin: 30px;
+   width: 450px;
+   padding: 20px;
+   border: 1px solid black;
+    background-color: #0f233c;
+    background:#c7a921;
+   border-radius:10px;
+
+  
+}
+h2{
+    letter-spacing:1px;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    border-bottom-style:groove;
+}
+h3{
+    border-bottom:1px solid black;
+    padding-bottom:2px;
+    margin:40px 0 40px;
+    font-size: 20px;
+}
+h5{
+    margin: 20px 0px 20px;
+    font-size: 16px;
+}
+h4{
+    font-size:23px;
+}
+.budget-header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin:20px 0px;
+    box-shadow: 6px 6px 10px -1px #c7a921,
+    -10px -8px 10px -1px  rgba(15, 15, 10, 0.7);
+}
+.budget-header > div{
+    flex:1;
+    text-align: center;
+}
+.budget-header .income{
+    border-right: 1px solid black;
+}
+#inr_tot{
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+#inr_min{
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+label{
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.input #groc_text , #amount{
+    background: none;
+}
+input[type = "text"],input[type="number"]{
+
+    display: block;
+    border-bottom:1px solid black;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color:black;
+
+}
+#btn{
+    cursor: pointer;
+    display:block;
+    background:#880873;
+    border-radius : 5px;
+    font-size: 16px;
+    margin: 10px 0px 30px;
+    width:100%;
+}
+#list{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+#list li{
+    background-color: rgb(70, 35, 87);
+    display: flex;
+    justify-content: space-between;
+    box-shadow:darkcyan;
+    padding: 10px;
+    margin:8px 0px;
+    color: wheat;
+    
+}
