@@ -12,8 +12,7 @@ body{
     font-family: 'Akaya Telivigala', cursive;
     background:#f1c504;
     background-color: #0f233c;
-/* background: -webkit-linear-gradient(to right, #fef17b, #ff7e5f);  
-background: linear-gradient(to right, #feb47b, #ffda5f);  */
+
 
     
 }
@@ -47,7 +46,7 @@ h5{
     font-size: 16px;
 }
 h4{
-    font-size:23px;
+    font-size:20px;
 }
 .budget-header{
     display: flex;
@@ -61,6 +60,7 @@ h4{
     flex:1;
     text-align: center;
 }
+
 .budget-header .income{
     border-right: 1px solid black;
 }
@@ -78,7 +78,8 @@ label{
 }
 
 .input #groc_text , #amount{
-    background: none;
+    background: rgb(26, 28, 29);
+    outline: none;
 }
 input[type = "text"],input[type="number"]{
 
@@ -87,17 +88,24 @@ input[type = "text"],input[type="number"]{
     padding: 8px;
     width: 100%;
     font-family: 'Akaya Telivigala', cursive;
-    color:black;
+    color:rgb(235, 226, 210);
+    outline: none;
 
 }
 #btn{
     cursor: pointer;
     display:block;
-    background:#880873;
-    border-radius : 5px;
+    background:#0f233c;
+    color: white;
+    border-radius : 10px;
     font-size: 16px;
-    margin: 10px 0px 30px;
+    margin: 20px 0px 30px;
+    padding :5px;
     width:100%;
+}
+#btn:hover{
+    color:black;
+    background:rgb(233, 83, 63);
 }
 #list{
     list-style: none;

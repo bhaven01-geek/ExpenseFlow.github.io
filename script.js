@@ -1,4 +1,4 @@
-const bal = document.getElementById("Balance");
+const bal = document.getElementById("inr_bal");
 
 const inr_tot = document.getElementById("inr_tot");
 
@@ -16,9 +16,9 @@ console.log(btn);
 const text = document.getElementById("groc_text");
 const amt = document.getElementById("amount");
 
-// if(localStorage.getItem('transaction' === null))
-let transaction = localStorage.getItem('transaction') === null ? localStorageTransactions : [];
-const localStorageTransactions = JSON.parse(localStorage.getItem('transaction'));
+
+let transaction = localStorage.getItem('transaction') === null ? [] : (localStorageTransactions = JSON.parse(localStorage.getItem('transaction'))) ;
+
 
 
 function IdGenerator(){
@@ -93,20 +93,15 @@ function updateValues() {
         (item) => item < 0).reduce(
             (acc, item) => (acc += item), 0) * -1).toFixed(2);
 
-    balance.innerText = `RS${total}`;
-    inr_tot.innerText = `RS${income}`;
-    inr_min.innerText = `RS${expense}`;
+    bal.innerText = `RS ${total}`;
+    inr_tot.innerText = `RS ${income}`;
+    inr_min.innerText = `RS ${expense}`;
 }
 
 
 function updateLocalStorage() {
     localStorage.setItem('transaction', JSON.stringify(transaction))
 }
-
-
-// function deleteFromLocalStorage(event) {
-
-// }
 
 function removeTransaction(id){
     transaction = transaction.filter(transaction => transaction.id !== id);
@@ -120,10 +115,7 @@ function Init() {
     updateValues();
 }
 Init();
-// btn.addEventListener("click", () => {
-//     addTransaction();
-//     // window.location.reload();
-// }, false);
+
 btn.addEventListener('click',addTransaction);
 // localStorage.clear();
 
